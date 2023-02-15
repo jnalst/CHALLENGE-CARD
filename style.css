@@ -1,0 +1,254 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+:root {
+  font-size: 62.5%;
+  /* 1 rem = 10px */
+
+  /* ### Primary */
+
+  --bOrange: hsl(31, 77%, 52%);
+  --dCyan: hsl(184, 100%, 22%);
+  --vDarkCyan: hsl(179, 100%, 13%);
+
+  /* ### Neutral */
+
+  /* (paragraphs) */
+  --transWhite: hsla(0, 0%, 100%, 0.75);
+  /* (background, headings, buttons) */
+  --vLightGray: hsl(0, 0%, 95%);
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+  background-color: var(--vLightGray);
+}
+
+.box1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+img {
+  margin-left: 4rem;
+  margin-top: 4rem;
+  margin-bottom: 0;
+}
+
+h1,
+h2 {
+  margin-left: 4rem;
+  margin-top: 3rem;
+  margin-right: 6rem;
+  font-family: "Big Shoulders Display";
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 3.8rem;
+  color: var(--vLightGray);
+}
+
+p {
+  margin-left: 4rem;
+  margin-top: 3rem;
+  margin-right: 3rem;
+  font-size: 1.8rem;
+  font-family: "Lexend Deca";
+  font-weight: 400;
+  color: var(--transWhite);
+}
+
+.sedans {
+  background-color: var(--bOrange);
+  border-radius: 2rem 0rem 0rem 2rem ;
+}
+
+.sedans p {
+  max-width: 23ch;
+}
+
+.sedans .botao1{
+    margin-left: 4rem;
+    margin-top: 8rem;
+    margin-bottom: 5rem;
+    padding: 1rem 2rem;
+    background-color: var(--vLightGray);
+    width: 13rem;
+    height: 3rem;
+    text-align: center;
+    display: grid;
+    place-items: center;
+    border-radius: 10rem;
+}
+
+.sedans .botao1 a{
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-family: "Lexend Deca";
+  color: var(--bOrange);
+}
+
+.suvs {
+  background-color: var(--dCyan);
+}
+
+.suvs p {
+  max-width: 23ch;
+}
+
+.suvs .botao2{
+  margin-left: 4rem;
+  margin-top: 8rem;
+  margin-bottom: 5rem;
+  padding: 1rem 2rem;
+  background-color: var(--vLightGray);
+  width: 13rem;
+  height: 3rem;
+  text-align: center;
+  display: grid;
+  place-items: center;
+  border-radius: 10rem;
+}
+
+.suvs .botao2 a{
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-family: "Lexend Deca";
+  color:var(--dCyan);
+}
+
+.luxury {
+  background-color: var(--vDarkCyan);
+  border-radius: 0rem 2rem 2rem 0rem ;
+}
+
+.luxury p {
+  max-width: 23ch;
+}
+
+.luxury .botao3{
+  margin-left: 4rem;
+  margin-top: 8rem;
+  margin-bottom: 5rem;
+  padding: 1rem 2rem;
+  background-color: var(--vLightGray);
+  width: 13rem;
+  height: 3rem;
+  text-align: center;
+  display: grid;
+  place-items: center;
+  border-radius: 10rem;
+}
+
+.luxury .botao3 a{
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-family: "Lexend Deca";
+  color:var(--vDarkCyan);
+}
+
+.attribution {
+  font-size: 1.8rem;
+  text-align: center;
+  margin-top: 5rem;
+  font-family: "Lexend Deca";
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  text-decoration: none;
+  color:var(--bOrange);
+}
+
+
+@media screen and (max-width: 1000px) {
+ 
+  .box1 {
+    grid-template-columns: 1fr;
+    margin-block: 6rem;
+  }
+  
+  img {
+    margin-left: 4rem;
+    margin-top: 5rem;
+    margin-right: 0rem;
+  }
+
+  h1, h2{
+    margin-left: 5rem;
+    margin-right: 0rem;
+  }
+  
+  p {
+    margin-left: 5rem;
+    margin-top: 3rem;
+    margin-right: 0rem;
+    font-size: 1.5rem;
+  }
+  
+  .sedans {
+    border-radius: 2rem 2rem 0rem 0rem ;
+    margin-inline: 1.8rem;
+  }
+  
+  .sedans p {
+    max-width: 26ch;
+  }
+  
+  .sedans .botao1{
+      margin-left: 5rem;
+      margin-top: 8rem;
+      margin-bottom: 5rem;
+      margin-right: 0rem;
+  }
+  
+  .sedans .botao1 a{
+    font-size: 1.6rem;
+  }
+  
+  .suvs {
+    margin-inline: 1.8rem;
+  }
+  
+  .suvs p {
+    max-width: 26ch;
+  }
+  
+  .suvs .botao2{
+    margin-left: 4rem;
+    margin-top: 8rem;
+    margin-bottom: 5rem;
+   }
+  
+  .suvs .botao2 a{
+    font-size: 1.6rem;
+  }
+  
+  .luxury {
+    border-radius: 0rem 0rem 2rem 2rem ;
+    margin-inline: 1.8rem;
+  }
+  
+  .luxury p {
+    max-width: 26ch;
+  }
+  
+  .luxury .botao3{
+    margin-left: 4rem;
+    margin-top: 8rem;
+    margin-bottom: 5rem;
+    }
+    
+  .attribution {
+    margin-top: 1.4rem;
+    font-size: 1.6rem;
+    max-width: 28ch;
+    place-self: center;
+    margin-bottom: 0.5rem;
+  }
+}
+
+
